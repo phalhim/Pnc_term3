@@ -1,0 +1,7 @@
+.studentsContainer{
+    display: flex;
+}
+body{
+    display: flex;
+    margin: 30px;
+}

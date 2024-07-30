@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="../js/order.js" defer></script>
+</head>
+
+<body>
+
+    <body>
+        <div class="nav_left">
+            <ul>
+                <li><a href="../index.html"></a>
+                    <div class="group_icon">
+                        <i class="material-icons">dashboard</i>
+                        <span>Daseboard</span>
+                    </div>
+                </li>
+                <li><a href="check_Product.html"></a>
+                    <i class="material-icons">shopping_cart</i>
+                    <span>Product</span>
+                </li>
+                <li><a href="check_categories.html"></a>
+                    <i class="material-icons">reorder</i>
+                    <span>Categories</span>
+                </li>
+                <li><a href="#"></a>
+                    <i class="material-icons">add_shopping_cart</i>
+                    <span>Order</span>
+                </li>
+            </ul>
+        </div>
+        <div class="nav_top">
+            <div class="logo">
+                <i class="material-icons">shopping_cart</i>
+                <h3>Pos-System</h3>
+            </div>
+        </div>
+        <div class="content-order">
+            <div class="left-box">
+                <div class="box">
+                    <header>View Information</header>
+                    <div class="show">
+                        <h3>
+                            <p>Name product: </p>
+                            <p id="proName"></p>
+                        </h3>
+                        <h3>
+                            <p>Quantity: </p>
+                            <p id="proQty"></p>
+                        </h3>
+                        <h3>
+                            <p>Total: </p>
+                            <p id="protol"></p>
+                        </h3>
+                        <button class="chart" onclick="showPro()"></button>
+                    </div>
+                </div>
+                <div class="Total">
+                    <h1>Total: <span class="Total"></span></h1>
+                </div>
+            </div>
+            <div class="right-box">
+                <div class="search-id">
+                    <input type="number" class="search" id="searchId" placeholder="Search ID of product">
+                </div>
+                <div class="user-list">
+                    <table class="order">
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Banana</td>
+                                <td>2</td>
+                                <td>3$</td>
+                                <td>h</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Banana</td>
+                                <td>2</td>
+                                <td>3$</td>
+                                <td>h</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+</html>

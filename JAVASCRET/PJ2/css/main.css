@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rebeccapurple;
+
+}
+
+.All {
+    width: 30%;
+    background: plum;
+    display: grid;
+    gap: 20px;
+    margin: 100px 0px 0px 500px;
+}
+
+.text1 {
+    text-align: center;
+}
+
+.text2 {
+    display: grid;
+    top: 20px;
+}
+
+table {
+    border: 2px solid purple;
+}
+
+tr {
+    border: 2px solid purple;
+}
+
+th {
+    text-align: center;
+}

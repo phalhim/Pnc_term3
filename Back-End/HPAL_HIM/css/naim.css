@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+form{
+    margin: 2rem;
+    padding: 1em;
+    background: rgb(255, 238, 139);
+    max-width: 60%;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-gap: 16px;
+}
+.box_radio{
+    width: 60%;
+    padding: 10px;
+
+    /* background: red; */
+}
+.box_checkbox{
+    width: 90%;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    /* background: red; */
+}
+input{
+    height: 20px;
+}
+button{
+    width: 650px;
+    height: 30px;
+    background: palevioletred;
+}
+ul{
+    /* background: red; */
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 100px 0px 0px 300px;
+    align-items: center;
+    text-align: center;
+   border: 2px solid palevioletred;
+}
+img{
+    width: 200px;
+    height: 200px;
+}

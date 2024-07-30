@@ -1,0 +1,20 @@
+{
+  "name": "exercise1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": " nodemon main.js"
+  },
+  "keywords": [
+    "Narong"
+  ],
+  "author": "Narong",
+  "license": "ISC",
+  "dependencies": {
+    "color": "^4.2.1",
+    "express": "^4.17.3",
+    "nodemon": "^2.0.16"
+  }
+}

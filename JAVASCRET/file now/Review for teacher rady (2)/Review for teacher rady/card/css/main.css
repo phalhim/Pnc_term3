@@ -1,0 +1,28 @@
+* {
+    margin: 0%;
+    padding: 0;
+    font-family: sans-serif;
+    list-style: none;
+    border: none;
+    box-sizing: border-box;
+    outline: none;
+}
+.card {
+    width: 25%;
+    box-shadow: rgb(255, 60, 0) 0px 2px 5px -1px;
+}
+img{
+    width: 100%;
+}
+.card-footer{
+    padding: 10px;
+    line-height: 1.4;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    gap:15px;
+}

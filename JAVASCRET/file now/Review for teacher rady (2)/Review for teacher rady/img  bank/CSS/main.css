@@ -1,0 +1,6 @@
+img{
+    transform: scaleX(1);
+}
+.chang_direction{
+    transform: scaleX(-1);
+}

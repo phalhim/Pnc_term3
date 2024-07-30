@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabay</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+    <div class="header">
+        <div class="home">
+            <ul>
+                <li><a href="">home</a></li>
+                <li><a href="">service</a></li>
+            </ul>
+        </div>
+        <div class="contact">
+            <ul>
+                <li><a href="">about</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-5">
+                <div class="col-20"  id="result"></div>
+                <div class="col-4"></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script>
+    function getImage(response){
+        let dats = response.data.hits;
+        for(let image of dats)
+        {
+            const card = document.createElement('div');
+            card.classList.add('card');
+            card.classList.add('mt-3');
+
+            const cardbody = document.createElement('div');
+            cardbody.classList.add('card-body');
+
+            const picture = document.createElement('img');
+            picture.classList.add('img-fluid')
+            picture.src = image.largeImageURL;
+
+            cardbody.appendChild(picture);
+            card.appendChild(cardbody);
+            result.appendChild(card);
+        }
+    }
+    
+    const result = document.querySelector('#result');
+    const key = "26309636-07eb17d3f4df5e39d79e54dcf";
+    const URL = "https://pixabay.com/api/?key=" + key;
+    axios
+    .get(URL)
+    .then(getImage)
+    .catch((error) => {console.log(error);});
+</script>
+</html>

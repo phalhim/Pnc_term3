@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+  <input type="radio" name="fruitChoice" value="MANGO" />MANGO
+  <input type="radio" name="fruitChoice" value="BANANA" checked />BANANA
+  <input type="radio" name="fruitChoice" value="APPLE" />APPLE
+  <button id="okButton" type="button">OK</button>
+
+  <p id="output"></p>
+  <script>
+    function apply() {
+      // On click on OK : write on the output : the selected fruit
+      // TIP 1 : you can use the getElementsByName to get the list of ALL element with the name
+      let inputs = document.querySelectorAll("input");
+      // TIP 2 : To check if the radio is checked or not, you can use the property : checked
+      for (let input of inputs){
+        if (input.checked){
+          document.getElementById("output").textContent = input.value;
+        }
+      }
+
+
+    }
+    document.getElementById("okButton").addEventListener("click", apply);
+  </script>
+</body>
+
+</html>

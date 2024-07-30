@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "title": "js",
+        "completed": true
+    },
+    {
+        "id": 2,
+        "title": "html and css",
+        "completed": false
+    },
+    {
+        "id": 3,
+        "title": "Larave and node js",
+        "completed": true
+    },
+    {
+        "id": 4,
+        "title": "vue js",
+        "completed": true
+    },
+    {
+        "id": 5,
+        "title": "Nuxt JS",
+        "completed": true
+    },
+    {
+        "id": 7,
+        "title": "html and css and javaScript",
+        "completed": false
+    }
+]

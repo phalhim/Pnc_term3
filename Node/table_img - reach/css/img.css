@@ -1,0 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.tr, img{
+    border-radius: 50%;
+}
